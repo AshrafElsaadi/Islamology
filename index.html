@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Islamology</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+ .gradient-bg {
+      background: linear-gradient(0deg, #928ED0, #2B00FF);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+
+    .title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 24px;
+      color: white;
+    }
+
+    .title::after {
+      content: '.';
+      color: bisque;
+    }
+
+    .data-container {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 120px;
+    }
+
+    .data {
+      font-family: 'DM Serif Display', serif;
+      font-size: 18px;
+      color: bisque;
+    }
+
+    .data-item {
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+      color: bisque;
+      flex: 1;
+      text-align: center;
+      margin-right: 10px;
+      position: relative;
+    }
+
+    .data-item::after {
+      content: '';
+      position: absolute;
+      bottom: 50;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 80%;
+      height: 1px;
+      background: linear-gradient(to right, transparent 0%, bisque 60%, bisque 60%, transparent 100%);
+    }
+
+    .time {
+      position: absolute;
+      bottom: -px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      font-family: 'DM Serif Display', serif;
+      font-size: 16.5px;
+      color: bisque;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="gradient-bg">
+    <h2 class="title">Islamology</h2>
+    <div class="data-container">
+      <div class="data-item">
+        <p>Fajr</p>
+        <div class="time" id="fajr"></div>
+      </div>
+      <div class="data-item">
+        <p>Duhr</p>
+        <div class="time" id="duhr"></div>
+      </div>
+      <div class="data-item">
+        <p>Asr</p>
+        <div class="time" id="asr"></div>
+      </div>
+      <div class="data-item">
+        <p>Maghrib</p>
+        <div class="time" id="maghrib"></div>
+      </div>
+      <div class="data-item">
+        <p>Isha</p>
+        <div class="time" id="isha"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="new.js"></script>
+</body>
+
+</html>
+
+
+
+    
